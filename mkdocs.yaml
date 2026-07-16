@@ -1,0 +1,194 @@
+site_name: "Exploring Containers"
+site_url: https://containers.bradpenney.io
+site_description: "Containers from first principles: what they are, the runtimes underneath them, Docker and Podman as tools, and the security/supply-chain discipline production demands."
+site_author: Brad Penney
+copyright: >-
+  Copyright &copy; Brad Penney —
+  <a href="#__consent">Change cookie settings</a>
+
+extra:
+  analytics:
+    provider: google
+    property: G-V01MJ4R3SQ
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to measure how effective our content is and whether you
+      find what you're looking for. With your consent, you help make these
+      learning sites better. You can change your choice at any time.
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: false
+    actions:
+      - accept
+      - reject
+      - manage
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/bradpenney
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/bradpenney
+    - icon: fontawesome/solid/globe
+      link: https://bradpenney.io
+    - icon: fontawesome/solid/rss
+      link: https://containers.bradpenney.io/feed_rss_created.xml
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  custom_dir: overrides
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  palette:
+    scheme: slate
+    primary: black
+    accent: amber
+  logo: images/exploring_containers.png
+  favicon: images/exploring_containers.png
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.code.highlight
+    - content.tooltips
+    - content.code.mermaid
+
+plugins:
+  - search
+  - meta
+  - exclude:
+      glob:
+        # Day One is published (2026-07-14) — removed from this list.
+        # Everything else is still draft until vetted (see CLAUDE.md publish workflow).
+        - "essentials/*"
+        - "efficiency/*"
+        - "mastery/*"
+  - rss:
+      match_path: ".*"
+      image: https://containers.bradpenney.io/images/exploring_containers.png
+      abstract_chars_count: 160
+      length: 20
+      date_from_meta:
+        as_creation: "date"
+        as_update: "git"
+        default_timezone: "America/Halifax"
+      categories:
+        - tags
+      use_material_social_cards: false
+  - social:
+      cards: true
+      cards_layout_options:
+        background_color: "#1a202c"
+        color: "#cbd5e0"
+  - htmlproofer:
+      enabled: true
+      validate_rendered_template: true
+      validate_external_urls: false
+      raise_error: true
+      raise_error_after_finish: true
+      raise_error_excludes:
+        404:
+          - "#__consent"
+
+markdown_extensions:
+  - toc:
+      permalink: "🔗"
+      permalink_title: "Link to this section"
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+
+  # EDITORIAL NOTE: Build in order: Day One → Essentials → Efficiency → Mastery.
+  # Uncomment remaining articles ONE AT A TIME after thorough editorial vetting,
+  # and remove the matching line from the exclude glob above when you do.
+
+  - 🏥 Day One:
+      - Overview: day_one/overview.md
+      - What Is a Container, Really?: day_one/what_is_a_container.md
+      - Getting Docker Running on Your Machine: day_one/getting_docker_running.md
+
+      - Containerizing a Single App:
+          - Writing Your First Dockerfile: day_one/app/first_dockerfile.md
+          - Building and Running Your Image: day_one/app/build_and_run.md
+          - "Debugging a Container That Won't Behave": day_one/app/debugging.md
+          - Sharing It With Your Team: day_one/app/sharing_with_your_team.md
+
+      - Breaking Up a Monolith:
+          - Why the Monolith Has to Move: day_one/monolith/why_it_has_to_move.md
+          - "Finding the Seams: How to Scope a Microservice": day_one/monolith/finding_the_seams.md
+          - Containerizing the First Slice: day_one/monolith/first_slice.md
+          - Living With a Partial Migration: day_one/monolith/living_with_partial_migration.md
+
+  # 📦 Essentials - Container Fundamentals, Docker, Podman, Images & Registries, Security
+  # - 📦 Essentials:
+  #     - Namespaces and cgroups: What Actually Isolates a Container: essentials/namespaces_cgroups.md
+  #     - Your First Dockerfile (Without the Bloat): essentials/first_dockerfile.md
+  #     - Docker Networking Basics: essentials/docker_networking_basics.md
+  #     - Podman for Docker Users: essentials/podman_for_docker_users.md
+  #     - Rootless Containers: Why Podman Doesn't Need Root: essentials/rootless_containers.md
+  #     - Docker Isn't the Only Runtime: Meet containerd and CRI-O: essentials/runtimes_intro.md
+  #     - Image Layers and Caching: Why Your Build Is Slow: essentials/image_layers_caching.md
+  #     - Pushing and Pulling: Working with a Container Registry: essentials/registries_basics.md
+  #     - Container Security Basics: What Isolation Does and Doesn't Protect: essentials/security_basics.md
+
+  # ⚡ Efficiency - Deeper Tooling, Runtimes, and Supply Chain
+  # - ⚡ Efficiency:
+  #     - Multi-Container Patterns: Sidecars, Init Containers, and Ambassadors: efficiency/multi_container_patterns.md
+  #     - Docker Compose: Multi-Container Apps Without the Copy-Paste: efficiency/docker_compose.md
+  #     - Docker Volumes and Bind Mounts: efficiency/docker_volumes.md
+  #     - Podman Pods: Grouping Containers the Kubernetes Way: efficiency/podman_pods.md
+  #     - Quadlets: Running Podman Containers as systemd Services: efficiency/quadlets.md
+  #     - The CRI: How Kubernetes Talks to containerd: efficiency/cri_explained.md
+  #     - runc and the OCI Runtime: The Layer Nobody Sees: efficiency/runc_oci_runtime.md
+  #     - Tagging and Versioning: Avoiding the ':latest' Trap: efficiency/tagging_versioning.md
+  #     - Self-Hosting a Registry: Harbor and Distribution: efficiency/self_hosted_registry.md
+  #     - Dropping Capabilities and Seccomp Profiles: efficiency/capabilities_seccomp.md
+  #     - Scanning Images for Vulnerabilities: efficiency/image_scanning.md
+
+  # 🎯 Mastery - Production Containers (paywalled tier)
+  # - 🎯 Mastery:
+  #     - The OCI Image and Runtime Specs, Line by Line: mastery/oci_specs.md
+  #     - Multi-Stage Builds and BuildKit: mastery/multi_stage_builds.md
+  #     - Rootless in Production: What It Actually Buys You: mastery/rootless_in_production.md
+  #     - Choosing a Runtime for Production: containerd vs. CRI-O vs. gVisor/Kata: mastery/choosing_a_runtime.md
+  #     - Image Provenance and SBOMs: mastery/provenance_sboms.md
+  #     - Signing and Verifying Images: cosign, Sigstore, and Supply Chain Trust: mastery/signing_verifying.md
