@@ -118,6 +118,8 @@ description: Compelling description for search results (150-160 chars ideal)
 - Explain the *why* before the *how* — a design decision before the command that exercises it.
 - No "Excited to share" energy anywhere; no over-the-top marketing language ("incredible", "game-changing").
 
+**⚠️ Watch the formula, not just the topic (2026-07-28):** "You've done X" asserts the reader's own history — a bet that fails whenever someone in the audience didn't do that exact thing, and it reads as alienating when it misses. Prefer grounding the hook in the practice/scenario itself: "Working code that runs fine on one machine is the easy part" instead of "You've got working code. It runs fine on your machine." Still concrete, still scenario-first — just not a bet on this specific reader's biography.
+
 **Required Sections (every substantial article):**
 
 1. Opening hook with real-world relevance (tier-appropriate register)
