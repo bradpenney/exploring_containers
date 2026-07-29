@@ -7,7 +7,7 @@ description: "The real mental model for containers: a normal process the kernel 
 # What Is a Container, Really?
 
 !!! tip "Part of Day One: Your App Has to Become a Container"
-    This is the shared starting point for both Day One pathways. Read it before [Writing Your First Dockerfile](app/first_dockerfile.md) or [Why the Monolith Has to Move](monolith/why_it_has_to_move.md).
+    This is the shared starting point for both Day One pathways. Read it before [Writing Your First Dockerfile](app/first_dockerfile.md) or [Why the Monolith Has to Move](monolith/why_it_has_to_move.md). It's also a step in the [How Modern Software Really Runs on a CPU](https://bradpenney.io/pathways/cpu-to-cluster) pathway on [bradpenney.io](https://bradpenney.io).
 
 Somewhere along the way, someone told you a container is "like a lightweight virtual machine." It's the most common explanation there is, and it's wrong in a way that will cost you later — when you're debugging why a container sees the host's process list, or wondering why two "isolated" containers can still starve each other for memory.
 
@@ -121,7 +121,27 @@ Two habits of thought carry over from VMs and cause real confusion:
 
 ## What's Next
 
-Next up is making sure the tooling itself actually works: **[Getting Docker Running on Your Machine](getting_docker_running.md)** — skip it if `docker run hello-world` already works for you. After that, the path splits by situation: **[Writing Your First Dockerfile](app/first_dockerfile.md)** if you're containerizing a single app, or **[Why the Monolith Has to Move](monolith/why_it_has_to_move.md)** if you're breaking up something bigger.
+Next up is making sure the tooling itself actually works: **[Getting Docker Running on Your Machine](getting_docker_running.md)** — skip it if `docker run hello-world` already works for you.
+
+After that, the path splits by situation:
+
+<div class="grid cards two-col" markdown>
+
+-   :material-application-outline: **[Writing Your First Dockerfile](app/first_dockerfile.md)**
+
+    ---
+
+    Containerizing a single app or service, start to finish.
+
+-   :material-source-branch: **[Why the Monolith Has to Move](monolith/why_it_has_to_move.md)**
+
+    ---
+
+    Breaking up something bigger, one slice at a time.
+
+</div>
+
+Tracing the CPU-to-cluster thread instead? The next step is **[Kubernetes Architecture](https://k8s.bradpenney.io/essentials/architecture/)** — who decides where a container like this one actually runs.
 
 ## Further Reading
 
