@@ -9,7 +9,7 @@ description: "Write a working Dockerfile for the app you already built — line 
 !!! tip "Part of Day One: Containerizing a Single App"
     This is the first article in [Containerizing a Single App](../overview.md#containerizing-a-single-app). Read [What Is a Container, Really?](../what_is_a_container.md) first if you haven't, and make sure `docker` actually runs on your machine — [Getting Docker Running on Your Machine](../getting_docker_running.md) covers that if it doesn't yet.
 
-You've got working code. It runs fine on your machine. Now someone needs it to run *anywhere else*, and "it works on my machine" stopped being an acceptable answer.
+Working code that runs fine on one machine is the easy part. The moment someone needs it to run *anywhere else*, "it works on my machine" stops being an acceptable answer.
 
 A Dockerfile is the fix: a plain-text list of instructions that tells Docker exactly how to build an image containing your app and everything it needs to run. Not a script that Docker executes top to bottom like a shell script — a series of layered steps, each one building on the last.
 

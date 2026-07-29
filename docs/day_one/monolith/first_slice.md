@@ -9,7 +9,7 @@ description: "Pull one validated seam out of the monolith and run it as its own 
 !!! tip "Part of Day One: Breaking Up a Monolith"
     Third article in [Breaking Up a Monolith](../overview.md#breaking-up-a-monolith). Assumes you've scored a candidate against the four signals in [Finding the Seams](finding_the_seams.md).
 
-You've got a piece that clears data ownership and at least one other signal. Say it's the notifications module from the [previous article's exercise](finding_the_seams.md#practice-exercises), now decoupled to consume events instead of querying other modules' tables directly. It's still living inside the monolith's codebase, deployed as part of the same process. The first slice is about proving it doesn't have to be.
+A piece has cleared data ownership and at least one other signal — say, the notifications module from the [previous article's exercise](finding_the_seams.md#practice-exercises), now decoupled to consume events instead of querying other modules' tables directly. It's still living inside the monolith's codebase, deployed as part of the same process. The first slice is about proving it doesn't have to be.
 
 The goal here isn't to migrate everything. It's to run **one piece, independently, next to the still-intact monolith**, and confirm the approach actually works before committing the rest of the application to it.
 
