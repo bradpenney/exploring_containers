@@ -1,6 +1,6 @@
 ---
 date: "2026-07-14 10:00"
-title: "Debugging a Container That Won't Behave"
+title: "How to Debug a Docker Container: Logs & Inspect"
 description: "Diagnose a container that exits immediately or runs but doesn't respond — docker logs, docker inspect, docker exec, and the 0.0.0.0 gotcha."
 ---
 

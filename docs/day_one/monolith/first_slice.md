@@ -1,6 +1,6 @@
 ---
 date: "2026-07-14 11:00"
-title: "Containerizing the First Slice"
+title: "How to Containerize Your First Microservice Slice"
 description: "Pull one validated seam out of the monolith and run it as its own container, side by side with the monolith, without betting the whole migration on it yet."
 ---
 

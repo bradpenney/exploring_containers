@@ -1,6 +1,6 @@
 ---
 date: "2026-07-14 09:45"
-title: "Building and Running Your Image"
+title: "docker build vs docker run: What's the Difference"
 description: "docker build and docker run, the gap between a successful build and a working container, and how to pass secrets in without baking them into the image."
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: "2026-07-14 10:45"
-title: "Finding the Seams: How to Scope a Microservice"
+title: "How to Scope a Microservice: 4 Signals to Check"
 description: "Four signals that tell you a piece of a monolith is a real service boundary, not just a convenient folder — and the distributed-monolith trap that comes from ignoring them."
 ---
 

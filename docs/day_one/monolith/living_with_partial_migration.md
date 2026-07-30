@@ -1,6 +1,6 @@
 ---
 date: "2026-07-14 11:15"
-title: "Living With a Partial Migration"
+title: "Monolith to Microservices: The Partial-Migration Stage"
 description: "Running a monolith and a handful of extracted services together is the normal, long-term state of most real migrations — not a failure to eventually fix."
 ---
 

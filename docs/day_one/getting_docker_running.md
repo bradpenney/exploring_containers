@@ -1,6 +1,6 @@
 ---
 date: "2026-07-15 09:00"
-title: "Getting Docker Running on Your Machine"
+title: "Install Docker or Podman: No Docker Desktop Needed"
 description: "Install Docker or Podman on Linux, macOS, or Windows from the command line — no Docker Desktop. Verify it works before writing a single Dockerfile."
 ---
 
