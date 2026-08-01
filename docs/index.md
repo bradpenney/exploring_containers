@@ -65,6 +65,14 @@ Container runtimes (containerd, CRI-O, runc), the OCI image and runtime specs, D
 !!! info "Where This Fits"
     If you're looking for how Kubernetes uses containers — kubelet, the CRI, Pods, `initContainers` — that's on [Exploring Kubernetes](https://k8s.bradpenney.io). This site owns the container itself: the runtime, the image, the tool, the isolation.
 
+## Part of the BradPenney.io Network
+
+This site is part of a family of progressive technical learning resources:
+
+- [Exploring Linux](https://linux.bradpenney.io) — the namespaces and cgroups a container is actually built from
+- [Exploring Kubernetes](https://k8s.bradpenney.io) — the orchestrator that consumes containers as its unit of deployment
+- [Exploring GitOps](https://gitops.bradpenney.io) — how a built image feeds into a Flux-managed deployment pipeline
+
 ## Subscribe by RSS
 
 New articles publish straight to the [RSS feed](https://containers.bradpenney.io/feed_rss_created.xml) — no algorithm, no email required.
