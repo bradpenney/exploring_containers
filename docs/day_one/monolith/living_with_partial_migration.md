@@ -6,8 +6,25 @@ description: "Running a monolith and a handful of extracted services together is
 
 # Living With a Partial Migration
 
-!!! tip "Part of Day One: Breaking Up a Monolith"
-    Fourth and final article in [Breaking Up a Monolith](../overview.md#breaking-up-a-monolith).
+<!-- PATHWAY_ROADMAP:START -->
+<div class="pathway-pills" markdown>
+:material-map-marker-path: <span class="pathway-pills__label">Part of a deep dive:</span> [Breaking Up a Monolith](why_it_has_to_move.md){: .pathway-pill }
+</div>
+
+??? abstract ":material-map-legend: Consult the map"
+
+    <div class="grid cards" markdown>
+
+    -   :material-source-fork: __Breaking Up a Monolith__ — step 4 of 4
+
+        ---
+
+        ← [Containerizing the First Slice](first_slice.md) · **you are here** · *(last step)* →
+
+        [Start the deep dive →](why_it_has_to_move.md)
+
+    </div>
+<!-- PATHWAY_ROADMAP:END -->
 
 Six months from now, the monolith will probably still be there. You'll have three, maybe five extracted services running next to it, each pulled out the way [the first one was](first_slice.md): a candidate that cleared the [four signals](finding_the_seams.md), given its own interface, containerized, proven at parity, cut over. There won't be a day where the last piece comes out and someone declares the migration complete.
 

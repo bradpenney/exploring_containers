@@ -6,8 +6,25 @@ description: "Pull one validated seam out of the monolith and run it as its own 
 
 # Containerizing the First Slice
 
-!!! tip "Part of Day One: Breaking Up a Monolith"
-    Third article in [Breaking Up a Monolith](../overview.md#breaking-up-a-monolith). Assumes you've scored a candidate against the four signals in [Finding the Seams](finding_the_seams.md).
+<!-- PATHWAY_ROADMAP:START -->
+<div class="pathway-pills" markdown>
+:material-map-marker-path: <span class="pathway-pills__label">Part of a deep dive:</span> [Breaking Up a Monolith](why_it_has_to_move.md){: .pathway-pill }
+</div>
+
+??? abstract ":material-map-legend: Consult the map"
+
+    <div class="grid cards" markdown>
+
+    -   :material-source-fork: __Breaking Up a Monolith__ — step 3 of 4
+
+        ---
+
+        ← [Finding the Seams: How to Scope a Microservice](finding_the_seams.md) · **you are here** · [Living With a Partial Migration](living_with_partial_migration.md) →
+
+        [Start the deep dive →](why_it_has_to_move.md)
+
+    </div>
+<!-- PATHWAY_ROADMAP:END -->
 
 A piece has cleared data ownership and at least one other signal — say, the notifications module from the [previous article's exercise](finding_the_seams.md#practice-exercises), now decoupled to consume events instead of querying other modules' tables directly. It's still living inside the monolith's codebase, deployed as part of the same process. The first slice is about proving it doesn't have to be.
 

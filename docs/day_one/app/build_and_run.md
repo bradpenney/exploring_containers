@@ -6,8 +6,25 @@ description: "docker build and docker run, the gap between a successful build an
 
 # Building and Running Your Image
 
-!!! tip "Part of Day One: Containerizing a Single App"
-    Second article in [Containerizing a Single App](../overview.md#containerizing-a-single-app). Make sure you've written [Your First Dockerfile](first_dockerfile.md) first.
+<!-- PATHWAY_ROADMAP:START -->
+<div class="pathway-pills" markdown>
+:material-map-marker-path: <span class="pathway-pills__label">Part of a deep dive:</span> [Containerizing a Single App](first_dockerfile.md){: .pathway-pill }
+</div>
+
+??? abstract ":material-map-legend: Consult the map"
+
+    <div class="grid cards" markdown>
+
+    -   :material-package-variant-closed: __Containerizing a Single App__ — step 2 of 4
+
+        ---
+
+        ← [Writing Your First Dockerfile](first_dockerfile.md) · **you are here** · [Debugging a Container That Won't Behave](debugging.md) →
+
+        [Start the deep dive →](first_dockerfile.md)
+
+    </div>
+<!-- PATHWAY_ROADMAP:END -->
 
 A Dockerfile is only the plan. Two commands turn it into something running: `docker build` reads the Dockerfile and produces an *image* — the packaged blueprint from [What Is a Container, Really?](../what_is_a_container.md). `docker run` takes that image and starts a *container* from it: an actual running process. They're two separate steps, not one action with two names, and keeping them separate in your head is most of what this article is about.
 
@@ -128,6 +145,8 @@ docker ps
 # CONTAINER ID   IMAGE          COMMAND           STATUS         PORTS                    NAMES
 # 7f8e9d0c1b2a   my-api:1.0     "python app.py"   Up 8 seconds   0.0.0.0:8000->8000/tcp   my-api-dev
 ```
+
+![Running docker build, then docker run, then docker ps to confirm the container actually started](../../images/terminal/docker_build_run.gif)
 
 `STATUS: Up` means the process started and hasn't exited. It does **not** mean your app is actually serving requests correctly. That's the next check:
 

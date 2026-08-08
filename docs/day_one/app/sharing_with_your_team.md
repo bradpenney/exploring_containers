@@ -6,8 +6,25 @@ description: "A container that only runs on your laptop hasn't solved the proble
 
 # Sharing It With Your Team
 
-!!! tip "Part of Day One: Containerizing a Single App"
-    Fourth and final article in [Containerizing a Single App](../overview.md#containerizing-a-single-app).
+<!-- PATHWAY_ROADMAP:START -->
+<div class="pathway-pills" markdown>
+:material-map-marker-path: <span class="pathway-pills__label">Part of a deep dive:</span> [Containerizing a Single App](first_dockerfile.md){: .pathway-pill }
+</div>
+
+??? abstract ":material-map-legend: Consult the map"
+
+    <div class="grid cards" markdown>
+
+    -   :material-package-variant-closed: __Containerizing a Single App__ — step 4 of 4
+
+        ---
+
+        ← [Debugging a Container That Won't Behave](debugging.md) · **you are here** · *(last step)* →
+
+        [Start the deep dive →](first_dockerfile.md)
+
+    </div>
+<!-- PATHWAY_ROADMAP:END -->
 
 The container works. It builds, it runs, you've debugged the inevitable first snag. And it's sitting entirely on your laptop, which means, as far as your team or any platform is concerned, it doesn't exist yet.
 

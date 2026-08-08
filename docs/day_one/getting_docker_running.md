@@ -6,8 +6,28 @@ description: "Install Docker or Podman on Linux, macOS, or Windows from the comm
 
 # Getting Docker Running on Your Machine
 
-!!! tip "Part of Day One: Your App Has to Become a Container"
-    Third article in the shared foundation, after the [Overview](overview.md) and [What Is a Container, Really?](what_is_a_container.md), and before you pick a pathway. Skip straight to [Writing Your First Dockerfile](app/first_dockerfile.md) if `docker run hello-world` already works on your machine.
+<!-- PATHWAY_ROADMAP:START -->
+<div class="pathway-pills" markdown>
+:material-map-marker-path: <span class="pathway-pills__label">Part of a deep dive:</span> [Your App Has to Become a Container](what_is_a_container.md){: .pathway-pill }
+</div>
+
+??? abstract ":material-map-legend: Consult the map"
+
+    <div class="grid cards" markdown>
+
+    -   :material-docker: __Your App Has to Become a Container__ — step 2 of 2
+
+        ---
+
+        ← [What Is a Container, Really?](what_is_a_container.md) · **you are here** · *(last step)* →
+
+        [Start the deep dive →](what_is_a_container.md)
+
+    </div>
+<!-- PATHWAY_ROADMAP:END -->
+
+!!! tip "Skip This If You Can"
+    Skip straight to [Writing Your First Dockerfile](app/first_dockerfile.md) if `docker run hello-world` already works on your machine.
 
 Everything from here on assumes `docker` (or `podman`) is a command you can actually run. If it already is, skip this article — the check above just told you so. If it isn't, this is the one piece of infrastructure standing between you and the rest of Day One, and it's worth setting up right the first time instead of clicking through an installer that leaves you fighting a menu-bar app later.
 

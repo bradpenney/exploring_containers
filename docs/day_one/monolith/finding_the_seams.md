@@ -6,8 +6,25 @@ description: "Four signals that tell you a piece of a monolith is a real service
 
 # Finding the Seams: How to Scope a Microservice
 
-!!! tip "Part of Day One: Breaking Up a Monolith"
-    Second article in [Breaking Up a Monolith](../overview.md#breaking-up-a-monolith). Assumes you've read [Why the Monolith Has to Move](why_it_has_to_move.md).
+<!-- PATHWAY_ROADMAP:START -->
+<div class="pathway-pills" markdown>
+:material-map-marker-path: <span class="pathway-pills__label">Part of a deep dive:</span> [Breaking Up a Monolith](why_it_has_to_move.md){: .pathway-pill }
+</div>
+
+??? abstract ":material-map-legend: Consult the map"
+
+    <div class="grid cards" markdown>
+
+    -   :material-source-fork: __Breaking Up a Monolith__ — step 2 of 4
+
+        ---
+
+        ← [Why the Monolith Has to Move](why_it_has_to_move.md) · **you are here** · [Containerizing the First Slice](first_slice.md) →
+
+        [Start the deep dive →](why_it_has_to_move.md)
+
+    </div>
+<!-- PATHWAY_ROADMAP:END -->
 
 Open the codebase and start looking for services, and you'll find them everywhere: a folder called `billing`, a package called `notifications`, a module called `reporting`. It looks like the decomposition is already halfway done. It isn't. A folder boundary is something a developer drew for their own convenience while writing the code; a service boundary has to survive contact with data, deployment, and failure — and most folder boundaries don't.
 

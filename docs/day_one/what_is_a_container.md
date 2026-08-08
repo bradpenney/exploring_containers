@@ -6,8 +6,36 @@ description: "The real mental model for containers: a normal process the kernel 
 
 # What Is a Container, Really?
 
-!!! tip "Part of Day One: Your App Has to Become a Container"
-    This is the shared starting point for both Day One pathways. Read it before [Writing Your First Dockerfile](app/first_dockerfile.md) or [Why the Monolith Has to Move](monolith/why_it_has_to_move.md). It's also a step in the [How Modern Software Really Runs on a CPU](https://bradpenney.io/pathways/cpu-to-cluster) pathway on [bradpenney.io](https://bradpenney.io).
+<!-- PATHWAY_ROADMAP:START -->
+<div class="pathway-pills" markdown>
+:material-map-marker-path: <span class="pathway-pills__label">Part of a deep dive and a pathway:</span> [Your App Has to Become a Container](what_is_a_container.md){: .pathway-pill } [How Modern Software Really Runs on a CPU](https://bradpenney.io/pathways/cpu-to-cluster){: .pathway-pill }
+</div>
+
+??? abstract ":material-map-legend: Consult the map"
+
+    <div class="grid cards two-col" markdown>
+
+    -   :material-docker: __Your App Has to Become a Container__ — step 1 of 2
+
+        ---
+
+        ← *(first step)* · **you are here** · [Getting Docker Running on Your Machine](getting_docker_running.md) →
+
+        [Start the deep dive →](what_is_a_container.md)
+
+    -   :material-chip: __How Modern Software Really Runs on a CPU__ — step 10 of 17
+
+        ---
+
+        ← [Where Your Memory Actually Goes: Swap and the OOM Killer](https://linux.bradpenney.io/efficiency/memory_swap_oom/) · **you are here** · [Kubernetes Architecture](https://k8s.bradpenney.io/essentials/architecture/) →
+
+        [Start the pathway →](https://bradpenney.io/pathways/cpu-to-cluster)
+
+    </div>
+<!-- PATHWAY_ROADMAP:END -->
+
+!!! tip "Choose Your Path"
+    Read this before [Writing Your First Dockerfile](app/first_dockerfile.md) or [Why the Monolith Has to Move](monolith/why_it_has_to_move.md) — both pathways build on it.
 
 Somewhere along the way, someone told you a container is "like a lightweight virtual machine." It's the most common explanation there is, and it's wrong in a way that will cost you later — when you're debugging why a container sees the host's process list, or wondering why two "isolated" containers can still starve each other for memory.
 

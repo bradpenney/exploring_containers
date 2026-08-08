@@ -6,8 +6,28 @@ description: "Write a working Dockerfile for the app you already built — line 
 
 # Writing Your First Dockerfile
 
-!!! tip "Part of Day One: Containerizing a Single App"
-    This is the first article in [Containerizing a Single App](../overview.md#containerizing-a-single-app). Read [What Is a Container, Really?](../what_is_a_container.md) first if you haven't, and make sure `docker` actually runs on your machine — [Getting Docker Running on Your Machine](../getting_docker_running.md) covers that if it doesn't yet.
+<!-- PATHWAY_ROADMAP:START -->
+<div class="pathway-pills" markdown>
+:material-map-marker-path: <span class="pathway-pills__label">Part of a deep dive:</span> [Containerizing a Single App](first_dockerfile.md){: .pathway-pill }
+</div>
+
+??? abstract ":material-map-legend: Consult the map"
+
+    <div class="grid cards" markdown>
+
+    -   :material-package-variant-closed: __Containerizing a Single App__ — step 1 of 4
+
+        ---
+
+        ← *(first step)* · **you are here** · [Building and Running Your Image](build_and_run.md) →
+
+        [Start the deep dive →](first_dockerfile.md)
+
+    </div>
+<!-- PATHWAY_ROADMAP:END -->
+
+!!! tip "Prerequisites"
+    Read [What Is a Container, Really?](../what_is_a_container.md) first if you haven't, and make sure `docker` actually runs on your machine — [Getting Docker Running on Your Machine](../getting_docker_running.md) covers that if it doesn't yet.
 
 Working code that runs fine on one machine is the easy part. The moment someone needs it to run *anywhere else*, "it works on my machine" stops being an acceptable answer.
 

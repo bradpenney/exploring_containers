@@ -6,8 +6,25 @@ description: "Diagnose a container that exits immediately or runs but doesn't re
 
 # Debugging a Container That Won't Behave
 
-!!! tip "Part of Day One: Containerizing a Single App"
-    Third article in [Containerizing a Single App](../overview.md#containerizing-a-single-app). Assumes you've [built and run](build_and_run.md) a container already.
+<!-- PATHWAY_ROADMAP:START -->
+<div class="pathway-pills" markdown>
+:material-map-marker-path: <span class="pathway-pills__label">Part of a deep dive:</span> [Containerizing a Single App](first_dockerfile.md){: .pathway-pill }
+</div>
+
+??? abstract ":material-map-legend: Consult the map"
+
+    <div class="grid cards" markdown>
+
+    -   :material-package-variant-closed: __Containerizing a Single App__ — step 3 of 4
+
+        ---
+
+        ← [Building and Running Your Image](build_and_run.md) · **you are here** · [Sharing It With Your Team](sharing_with_your_team.md) →
+
+        [Start the deep dive →](first_dockerfile.md)
+
+    </div>
+<!-- PATHWAY_ROADMAP:END -->
 
 Your container fails in one of two failure modes, and they call for different diagnosis. Either it exits the moment it starts (`docker ps` shows nothing, or shows `Exited`), or it stays up and shows `Running`, and nothing you send it gets a response. The first is a crash. The second is quieter and, the first time you hit it, more confusing.
 

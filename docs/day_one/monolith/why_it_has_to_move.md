@@ -6,8 +6,28 @@ description: "Understand why 'get off the VMs' is really two separate problems, 
 
 # Why the Monolith Has to Move
 
-!!! tip "Part of Day One: Breaking Up a Monolith"
-    First article in [Breaking Up a Monolith](../overview.md#breaking-up-a-monolith). Read [What Is a Container, Really?](../what_is_a_container.md) first if you haven't, and make sure `docker` actually runs on your machine — [Getting Docker Running on Your Machine](../getting_docker_running.md) covers that if it doesn't yet.
+<!-- PATHWAY_ROADMAP:START -->
+<div class="pathway-pills" markdown>
+:material-map-marker-path: <span class="pathway-pills__label">Part of a deep dive:</span> [Breaking Up a Monolith](why_it_has_to_move.md){: .pathway-pill }
+</div>
+
+??? abstract ":material-map-legend: Consult the map"
+
+    <div class="grid cards" markdown>
+
+    -   :material-source-fork: __Breaking Up a Monolith__ — step 1 of 4
+
+        ---
+
+        ← *(first step)* · **you are here** · [Finding the Seams: How to Scope a Microservice](finding_the_seams.md) →
+
+        [Start the deep dive →](why_it_has_to_move.md)
+
+    </div>
+<!-- PATHWAY_ROADMAP:END -->
+
+!!! tip "Prerequisites"
+    Read [What Is a Container, Really?](../what_is_a_container.md) first if you haven't, and make sure `docker` actually runs on your machine — [Getting Docker Running on Your Machine](../getting_docker_running.md) covers that if it doesn't yet.
 
 Someone (a manager, a platform team, a mandate from three levels up) has said the monolith can't live on VMs anymore. Nobody handed you a redesign, just a deadline and an assumption that you know what "containerize it" means for an application that's been growing for years.
 
