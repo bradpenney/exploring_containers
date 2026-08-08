@@ -1,0 +1,148 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Exploring Containers",
+    "home_page_url": "https://containers.bradpenney.io/",
+    "feed_url": "https://containers.bradpenney.io/feed_json_created.json",
+    "description": "Containers from first principles: what they are, the runtimes underneath them, Docker and Podman as tools, and the security/supply-chain discipline production demands.",
+    "icon": "https://containers.bradpenney.io/images/exploring_containers.png",
+    "authors": [
+        {
+            "name": "Brad Penney"
+        }
+    ],
+    "language": "en",
+    "items": [
+        {
+            "id": "https://containers.bradpenney.io/day_one/getting_docker_running/",
+            "url": "https://containers.bradpenney.io/day_one/getting_docker_running/",
+            "title": "Getting Docker Running on Your Machine",
+            "content_html": "Install Docker or Podman on Linux, macOS, or Windows from the command line \u2014 no Docker Desktop. Verify it works before writing a single Dockerfile.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-15T09:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://containers.bradpenney.io/day_one/monolith/living_with_partial_migration/",
+            "url": "https://containers.bradpenney.io/day_one/monolith/living_with_partial_migration/",
+            "title": "Living With a Partial Migration",
+            "content_html": "Running a monolith and a handful of extracted services together is the normal, long-term state of most real migrations \u2014 not a failure to eventually fix.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-14T11:15:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://containers.bradpenney.io/day_one/monolith/first_slice/",
+            "url": "https://containers.bradpenney.io/day_one/monolith/first_slice/",
+            "title": "Containerizing the First Slice",
+            "content_html": "Pull one validated seam out of the monolith and run it as its own container, side by side with the monolith, without betting the whole migration on it yet.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-14T11:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://containers.bradpenney.io/day_one/monolith/finding_the_seams/",
+            "url": "https://containers.bradpenney.io/day_one/monolith/finding_the_seams/",
+            "title": "Finding the Seams: How to Scope a Microservice",
+            "content_html": "Four signals that tell you a piece of a monolith is a real service boundary, not just a convenient folder \u2014 and the distributed-monolith trap that comes from ignoring them.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-14T10:45:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://containers.bradpenney.io/day_one/monolith/why_it_has_to_move/",
+            "url": "https://containers.bradpenney.io/day_one/monolith/why_it_has_to_move/",
+            "title": "Why the Monolith Has to Move",
+            "content_html": "Understand why 'get off the VMs' is really two separate problems, and why containerizing the monolith as-is is a legitimate first step, not a shortcut.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-14T10:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://containers.bradpenney.io/day_one/app/sharing_with_your_team/",
+            "url": "https://containers.bradpenney.io/day_one/app/sharing_with_your_team/",
+            "title": "Sharing It With Your Team",
+            "content_html": "A container that only runs on your laptop hasn't solved the problem yet. Tag, push, and pull an image through a container registry.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-14T10:15:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://containers.bradpenney.io/day_one/app/debugging/",
+            "url": "https://containers.bradpenney.io/day_one/app/debugging/",
+            "title": "Debugging a Container That Won't Behave",
+            "content_html": "Diagnose a container that exits immediately or runs but doesn't respond \u2014 docker logs, docker inspect, docker exec, and the 0.0.0.0 gotcha.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-14T10:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://containers.bradpenney.io/day_one/app/build_and_run/",
+            "url": "https://containers.bradpenney.io/day_one/app/build_and_run/",
+            "title": "Building and Running Your Image",
+            "content_html": "docker build and docker run, the gap between a successful build and a working container, and how to pass secrets in without baking them into the image.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-14T09:45:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://containers.bradpenney.io/day_one/app/first_dockerfile/",
+            "url": "https://containers.bradpenney.io/day_one/app/first_dockerfile/",
+            "title": "Writing Your First Dockerfile",
+            "content_html": "Write a working Dockerfile for the app you already built \u2014 line by line, with the defaults that keep it small, cacheable, and not running as root.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-14T09:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://containers.bradpenney.io/day_one/what_is_a_container/",
+            "url": "https://containers.bradpenney.io/day_one/what_is_a_container/",
+            "title": "What Is a Container, Really?",
+            "content_html": "The real mental model for containers: a normal process the kernel agrees to isolate, not a smaller virtual machine. Covers the image vs. container distinction.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-14T09:15:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://containers.bradpenney.io/day_one/overview/",
+            "url": "https://containers.bradpenney.io/day_one/overview/",
+            "title": "Overview",
+            "content_html": "Two paths into containerization for developers: containerizing a single app for the first time, or breaking a monolith out of VMs. Start here.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-14T09:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://containers.bradpenney.io/",
+            "url": "https://containers.bradpenney.io/",
+            "title": "Home",
+            "content_html": "A progressive guide to containerization \u2014 from what a container actually is, to the runtimes underneath it, to running it securely in production.",
+            "image": null,
+            "date_modified": "2026-08-08T00:57:31-03:00",
+            "date_published": "2026-07-12T12:00:00-03:00",
+            "authors": [],
+            "tags": []
+        }
+    ]
+}

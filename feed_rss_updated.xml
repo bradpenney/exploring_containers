@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="rss.xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    
+    <title>Exploring Containers</title>
+    <description>Containers from first principles: what they are, the runtimes underneath them, Docker and Podman as tools, and the security/supply-chain discipline production demands.</description>
+    <link>https://containers.bradpenney.io/</link>
+    <atom:link href="https://containers.bradpenney.io/feed_rss_updated.xml" rel="self" type="application/rss+xml" />
+
+    
+    <managingEditor>Brad Penney</managingEditor>
+    
+    <language>en</language>
+
+    
+    <pubDate>Sat, 08 Aug 2026 00:58:18 -0000</pubDate>
+    <lastBuildDate>Sat, 08 Aug 2026 00:58:18 -0000</lastBuildDate>
+    <ttl>1440</ttl>
+
+    
+    <generator>MkDocs RSS plugin - v1.19.0</generator>
+
+    
+    
+    <image>
+      <url>https://containers.bradpenney.io/images/exploring_containers.png</url>
+      <title>Exploring Containers</title>
+      <link>https://containers.bradpenney.io/</link>
+    </image>
+    
+
+    
+    
+    <item>
+      <title>Home</title>
+      
+      
+      
+      
+        
+      
+      <description>A progressive guide to containerization — from what a container actually is, to the runtimes underneath it, to running it securely in production.</description>
+      <link>https://containers.bradpenney.io/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Getting Docker Running on Your Machine</title>
+      
+      
+      
+      
+        
+      
+      <description>Install Docker or Podman on Linux, macOS, or Windows from the command line — no Docker Desktop. Verify it works before writing a single Dockerfile.</description>
+      <link>https://containers.bradpenney.io/day_one/getting_docker_running/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/day_one/getting_docker_running/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      
+      
+      
+      
+        
+      
+      <description>Two paths into containerization for developers: containerizing a single app for the first time, or breaking a monolith out of VMs. Start here.</description>
+      <link>https://containers.bradpenney.io/day_one/overview/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/day_one/overview/</guid>
+      
+    </item>
+    
+    <item>
+      <title>What Is a Container, Really?</title>
+      
+      
+      
+      
+        
+      
+      <description>The real mental model for containers: a normal process the kernel agrees to isolate, not a smaller virtual machine. Covers the image vs. container distinction.</description>
+      <link>https://containers.bradpenney.io/day_one/what_is_a_container/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/day_one/what_is_a_container/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Building and Running Your Image</title>
+      
+      
+      
+      
+        
+      
+      <description>docker build and docker run, the gap between a successful build and a working container, and how to pass secrets in without baking them into the image.</description>
+      <link>https://containers.bradpenney.io/day_one/app/build_and_run/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/day_one/app/build_and_run/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Debugging a Container That Won&#39;t Behave</title>
+      
+      
+      
+      
+        
+      
+      <description>Diagnose a container that exits immediately or runs but doesn&#39;t respond — docker logs, docker inspect, docker exec, and the 0.0.0.0 gotcha.</description>
+      <link>https://containers.bradpenney.io/day_one/app/debugging/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/day_one/app/debugging/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Writing Your First Dockerfile</title>
+      
+      
+      
+      
+        
+      
+      <description>Write a working Dockerfile for the app you already built — line by line, with the defaults that keep it small, cacheable, and not running as root.</description>
+      <link>https://containers.bradpenney.io/day_one/app/first_dockerfile/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/day_one/app/first_dockerfile/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Sharing It With Your Team</title>
+      
+      
+      
+      
+        
+      
+      <description>A container that only runs on your laptop hasn&#39;t solved the problem yet. Tag, push, and pull an image through a container registry.</description>
+      <link>https://containers.bradpenney.io/day_one/app/sharing_with_your_team/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/day_one/app/sharing_with_your_team/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Finding the Seams: How to Scope a Microservice</title>
+      
+      
+      
+      
+        
+      
+      <description>Four signals that tell you a piece of a monolith is a real service boundary, not just a convenient folder — and the distributed-monolith trap that comes from ignoring them.</description>
+      <link>https://containers.bradpenney.io/day_one/monolith/finding_the_seams/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/day_one/monolith/finding_the_seams/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Containerizing the First Slice</title>
+      
+      
+      
+      
+        
+      
+      <description>Pull one validated seam out of the monolith and run it as its own container, side by side with the monolith, without betting the whole migration on it yet.</description>
+      <link>https://containers.bradpenney.io/day_one/monolith/first_slice/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/day_one/monolith/first_slice/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Living With a Partial Migration</title>
+      
+      
+      
+      
+        
+      
+      <description>Running a monolith and a handful of extracted services together is the normal, long-term state of most real migrations — not a failure to eventually fix.</description>
+      <link>https://containers.bradpenney.io/day_one/monolith/living_with_partial_migration/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/day_one/monolith/living_with_partial_migration/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Why the Monolith Has to Move</title>
+      
+      
+      
+      
+        
+      
+      <description>Understand why &#39;get off the VMs&#39; is really two separate problems, and why containerizing the monolith as-is is a legitimate first step, not a shortcut.</description>
+      <link>https://containers.bradpenney.io/day_one/monolith/why_it_has_to_move/</link>
+      <pubDate>Sat, 08 Aug 2026 00:57:31 -0300</pubDate>
+      <source url="https://containers.bradpenney.io/feed_rss_updated.xml">Exploring Containers</source>
+      
+      <guid isPermaLink="true">https://containers.bradpenney.io/day_one/monolith/why_it_has_to_move/</guid>
+      
+    </item>
+    
+  </channel>
+</rss>
