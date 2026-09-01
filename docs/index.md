@@ -1,6 +1,6 @@
 ---
 date: "2026-07-12 12:00"
-title: "Exploring Containers - Docker, Podman, and Runtimes"
+title: "Docker, Podman, and Runtimes"
 description: "A progressive guide to containerization — from what a container actually is, to the runtimes underneath it, to running it securely in production."
 ---
 
