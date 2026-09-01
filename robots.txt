@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://containers.bradpenney.io/sitemap.xml
